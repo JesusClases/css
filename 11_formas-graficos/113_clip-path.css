@@ -1,0 +1,42 @@
+/* CSS: CLIP-PATH
+------------------
+  Crea formas con imágenes
+  https://bennettfeely.com/clippy/
+*/
+
+.box {
+  max-width  : 50vw;
+  min-height : 50vw;
+  overflow   : hidden;
+  margin     : 1rem auto;
+  line-height: 0;
+  /* background : rgba(255,0,0,0.2); */
+}
+
+.dim {
+  width      : 50vw;
+  height     : 50vw;
+  object-fit : cover;
+  /* transition : transform 2s; */
+}
+
+.triangulo {
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+.pentagono {
+  clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+}
+.forma {
+  clip-path: polygon(100% 36%, 97% 0, 0 0, 66% 100%, 0 77%);
+}
+.pajarita {
+  clip-path: polygon(79% 4%, 66% 17%, 66% 42%, 81% 58%, 81% 100%, 56% 74%, 29% 100%, 0 100%, 44% 50%, 44% 0);
+}
+
+
+
+/* .ani:hover {
+  cursor: pointer;
+  transform: rotate(360deg);
+} */
+

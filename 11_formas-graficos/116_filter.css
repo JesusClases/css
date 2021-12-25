@@ -1,0 +1,35 @@
+/* CSS: FILTER
+------------------
+generator: (https://www.cssfiltergenerator.com/)
+Nos permiten aplicar efectos de filtro a una imagen.
+    filter: blur(5px);
+    filter: brightness(0.4);
+    filter: contrast(200%);
+    filter: drop-shadow(16px 16px 20px blue);
+    filter: grayscale(50%);
+    filter: hue-rotate(90deg);
+    filter: invert(75%);
+    filter: opacity(25%);
+    filter: saturate(30%);
+    filter: sepia(60%);
+
+    Apply multiple filters
+      filter: contrast(175%) brightness(3%);
+
+    Global values
+      filter: inherit;
+      filter: initial;
+      filter: unset
+*/
+
+.filter {
+  width   : 60%;
+  display : block;
+  margin  : 2rem  auto;
+
+  filter: grayscale(1);
+  filter: sepia(75%);
+  filter: invert(75%);
+  filter: hue-rotate(60deg);
+}
+

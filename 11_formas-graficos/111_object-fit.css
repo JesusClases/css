@@ -1,0 +1,32 @@
+/* CSS: object-fit
+------------------
+  Adapta y no deforma una imagen incluida en html
+  Nos permite configurar el tamaño de una imagen
+  dentro de <img>, y la podemos configurar con
+  la propiedad object-position
+*/
+
+.box {
+  width      : 500px;
+  height     : 500px;
+  overflow   : hidden;
+  margin     : 1rem auto;
+  background : rgba(255,0,0,0.25);
+}
+
+.sin-fit {
+  display          : block;
+}
+.con-fit {
+  width: 100%;
+  height: 100%;
+
+  /* no deforma, pero no cubre box */
+  object-fit: scale-down;
+  /* no deforma y se adapta */
+  object-fit: cover;
+  /* no deforma y posiciona */
+  object-position: left;
+  object-position: right;
+  object-position: center;
+}

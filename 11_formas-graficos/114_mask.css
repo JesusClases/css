@@ -1,0 +1,48 @@
+/* CSS: MASK
+------------------
+  Crea máscaras en imágenes
+
+*/
+
+.box {
+  max-width   : 80vw;
+  height      : 50vh;
+  overflow    : hidden;
+  margin      : 1rem auto;
+  line-height : 0;
+  background  : rgba(255,0,0,0.2);
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* border-radius: 50%; */
+}
+
+.mascara {
+  -webkit-mask-image: url(./../assets/fx/mascara3.png);
+  mask-image: url(./../assets/fx/mascara3.png);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: 0%;
+  mask-position: 0%;
+  /* -webkit-mask-size: cover;
+  mask-size: cover; */
+
+
+  animation: mover 5s linear infinite alternate-reverse;
+}
+
+@keyframes mover {
+  from {
+    -webkit-mask-position: 0%;
+    mask-position: 0%;
+  }
+  to {
+    -webkit-mask-position: 100%;
+    mask-position: 100%;
+  }
+
+}
+

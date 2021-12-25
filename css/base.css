@@ -1,0 +1,39 @@
+*, *::after, *::before {
+  margin     : 0;
+  padding    : 0;
+  box-sizing : border-box;
+}
+html {
+  font: 100 16px/1.25 sans-serif;
+  /* scroll-behavior: smooth; */
+}
+body {
+  margin  : 1rem;
+  padding : 1rem;
+}
+h1 {
+  text-align       : center;
+  color            : #fff;
+  background-color : rgba(0,0,0,0.75);
+  /* otra forma de utilizar color */
+  background-color : rgb(0 0 0 / .9);
+}
+h2,h3 {
+  border: 1px solid #666;
+}
+h1,h2 {
+  margin  : 1rem 0;
+  padding : 1rem 0;
+}
+
+/* img {
+  max-width   : 100%;
+  height      : auto;
+  line-height : 0;
+} */
+
+.mk-r { box-shadow: 0 0 0 1px rgb(255 0 0 / .5); }
+.mk-g { box-shadow: 0 0 0 1px rgb(0 255 0 / .5); }
+.mk-b { box-shadow: 0 0 0 1px rgb(0 0 255 / .5); }
+.mk-k { box-shadow: 0 0 0 1px rgb(0 0 0 / .5); }
+.mk-w { box-shadow: 0 0 0 1px rgb(255 255 255 / .5); }

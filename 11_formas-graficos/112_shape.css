@@ -1,0 +1,52 @@
+/* CSS: shape
+--------------
+  Se adapta a la forma de la imagen o elemento
+  Valores:
+    circle(): for making circular shapes.
+    ellipse(): for making elliptical shapes.
+    inset(): for making rectangular shapes.
+    polygon(): for creating any shape with 3 or more vertices.
+    url(): identifies which image should be used to wrap text around.
+    initial: the float area is unaffected.
+    inherit: inherits shape-outside value from parent.
+  shape-image-threshold: 0.5 que px dependiendo de transparencia
+*/
+p {
+  /* padding: 1rem; */
+  margin: 1rem;
+}
+section { overflow: hidden;}
+.box {
+  max-width  : 90vw;
+  min-height : 90vh;
+  margin     : 1rem auto;
+  background : rgba(255,128,0,0.25);
+}
+
+.shape-img {
+  width: 25vw;
+  height: auto;
+  float: left;
+  shape-outside: circle(50%);
+}
+
+.shape-elemento {
+  width         : 25vw;
+  height        : 50vw;
+  float         : left;
+  background    : rgba(128,0,0,0.1);
+  clip-path     : ellipse(100px 200px at 50% 50%);
+  shape-outside : ellipse(100px 200px at 50% 50%);
+}
+
+.shape-png {
+  width: 50%;
+  height: auto;
+  float: left;
+  padding: 0 16px;
+  margin: 25px 0 0 0;
+  /* border: 10px solid transparent; */
+  /* background: rgba(128,0,0,0.1); */
+  shape-outside: url('./../assets/trans/7.png');
+  /* shape-image-threshold: 059; */
+}

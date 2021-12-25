@@ -1,0 +1,44 @@
+/* CSS: BLEND MODE
+------------------
+generator: [https://ilyashubin.github.io/FilterBlend/
+
+  Son efectos para colocar en etiquetas o imágenes
+  basadas en los efectos de capa de Photoshop
+
+  mix-blend-mode
+    se aplica a etiquetas img en html
+  background-blend-mode
+    se aplica a background de CSS
+
+  normal         hard-light
+  multiply       soft-light
+  screen         difference
+  overlay        exclusion
+  darken         hue
+  lighten        saturation
+  color-dodge    color
+  color-burn     luminosity
+
+  nota: se pueden aplicar dos url() separados por ,
+*/
+
+/* .box {
+  max-width   : 80vw;
+  height      : 50vh;
+  overflow    : hidden;
+  margin      : 1rem auto;
+  line-height : 0;
+  background  : rgba(255,0,0,0.2);
+} */
+
+body {
+  min-height: 100vh;
+  background: url(./../assets/nasa/2.jpg) no-repeat center center / cover fixed;
+}
+.blend {
+  display: block;
+  margin: 1rem  auto;
+  mix-blend-mode: color-dodge;
+  /* filter: saturate(10); */
+}
+
