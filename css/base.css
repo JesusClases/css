@@ -8,8 +8,8 @@ html {
   /* scroll-behavior: smooth; */
 }
 body {
-  margin  : 1rem;
-  padding : 1rem;
+  margin  : 0 0.5rem;
+  padding : 0 0.5rem;
 }
 h1 {
   text-align       : center;
@@ -22,8 +22,8 @@ h2,h3 {
   border: 1px solid #666;
 }
 h1,h2 {
-  margin  : 1rem 0;
-  padding : 1rem 0;
+  margin  : 1rem 0.5rem;
+  padding : 1rem 0.5rem;
 }
 
 /* img {

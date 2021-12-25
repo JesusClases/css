@@ -1,0 +1,37 @@
+/* CSS -> (cc) 3con14
+-------------------------------------------------
+sticky
+- Necesita top
+- El padre debe tener un alto suficiente
+  como para generar un scroll
+- Overflow no esté declarada.
+------------------------------------------------- */
+
+body {
+  background-color: rgb(255 128 0 / .25);
+  min-height: 100vh;
+  margin: 0;
+}
+h1 {
+  position: sticky;
+  top: 0;
+
+  z-index: 100;
+  height: 150px;
+  margin: 0;
+}
+
+h2 {
+  position: sticky;
+  top: 150px;
+  background: rgb(80 80 80 / 1);
+  margin: 1rem 0;
+}
+
+section {
+  background-color: rgba(222, 184, 135,1);
+  margin: 1rem 0;
+}
+/* article {
+  margin: 1rem;
+} */
