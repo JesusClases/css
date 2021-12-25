@@ -23,7 +23,7 @@ Nos permiten aplicar efectos de filtro a una imagen.
 */
 
 .filter {
-  width   : 60%;
+  width   : 50%;
   display : block;
   margin  : 2rem  auto;
 
@@ -32,4 +32,12 @@ Nos permiten aplicar efectos de filtro a una imagen.
   filter: invert(75%);
   filter: hue-rotate(60deg);
 }
+.filter1 {
+  width   : 50%;
+  display : block;
+  margin  : 2rem  auto;
 
+  filter: grayscale(1);
+  filter: sepia(75%);
+  filter: invert(75%);
+}
