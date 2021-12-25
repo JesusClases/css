@@ -5,6 +5,15 @@ footer_down
 
 body {
   background-color: rgb(255 127 80 / .5);
-  padding: 1rem;
-  margin: 1rem;
+  min-height: 100vh;
+  margin-bottom: 4rem;
+}
+footer {
+  background: hsla(16, 100%, 55%, 1);
+  padding: 1rem 0;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }

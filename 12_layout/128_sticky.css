@@ -5,6 +5,7 @@ sticky
 - El padre debe tener un alto suficiente
   como para generar un scroll
 - Overflow no esté declarada.
+(https://css-tricks.com/creating-sliding-effects-using-sticky-positioning/)
 ------------------------------------------------- */
 
 body {
@@ -32,6 +33,4 @@ section {
   background-color: rgba(222, 184, 135,1);
   margin: 1rem 0;
 }
-/* article {
-  margin: 1rem;
-} */
+
