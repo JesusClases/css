@@ -21,3 +21,7 @@ cambia color de checkbox y radio
   height: 30px;
   margin: 1rem;
 }
+.opciones{
+  font-size: 1.25rem;
+  color: brown;
+}
