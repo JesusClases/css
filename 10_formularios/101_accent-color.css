@@ -1,0 +1,23 @@
+/* CSS -> (cc) 3con14
+-------------------------------------------------
+accent-color
+cambia color de checkbox y radio
+------------------------------------------------- */
+
+[type="checkbox"]{
+	appearance: auto;
+	-webkit-appearance: auto;
+	-moz-appearance: auto;
+  accent-color: blue;
+  display: block;
+  width: 30px;
+  height: 30px;
+  margin: 1rem;
+}
+[type*="radio"]{
+  accent-color: red;
+  display: block;
+  width: 30px;
+  height: 30px;
+  margin: 1rem;
+}

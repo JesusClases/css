@@ -1,0 +1,44 @@
+/* CSS -> (cc) 3con14
+-------------------------------------------------
+marker
+cambia color de listas <ul> y <ol>
+------------------------------------------------- */
+:root {
+  --size-list: 3rem
+}
+
+.lista {
+  margin-left:  6rem;
+  font-size: var(--size-list);
+}
+
+.lista--ol li::marker {
+  color       : blue;
+  font-weight : 900;
+}
+/* Se puede cambiar color de marcas */
+/* .lista--ul li::marker {
+  color: lime;
+  font-weight: 900;
+} */
+.lista--ul li::marker {
+  content: "🧡 ";
+}
+
+
+h3 {
+  counter-increment: h3;
+  display: list-item;
+  margin-left: 6rem;
+  border: none;
+  font-size: 3rem;
+}
+
+h3::marker {
+  display: list-item;
+  content: "#" counter(h3) " ";
+  color: lightsalmon;
+  font-weight: 900;
+}
+
+
