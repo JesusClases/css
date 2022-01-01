@@ -1,0 +1,121 @@
+:root {
+  --co-pri : rgba(255,255,255,0.85);
+  --co-sec : rgba(0,0,255,0.85);
+  --bg-pri : rgba(0,0,0,0.85);
+  --bg-sec : rgba(0,0,0,0.65);
+  --bg-ter : rgba(0,255,0,0.35);
+  --ejes   : rgb(255 255 255 /.25);
+  --sombra : 1px 0 10px rgba(0,0,0,0.75);
+
+  --dim  : 45vmin;
+  --tras : 0px;
+  --rot  : 0deg;
+  --esc  : 1;
+  --tor  : 0deg;
+}
+
+*,*::before,*::after {
+  box-sizing: border-box;
+  outline: none;
+}
+html { font: 100 16px/1.25 sans-serif; }
+body {
+  min-height      : 100vh;
+  overflow        : hidden;
+  background      : var(--bg-pri);
+  margin-left     : 250px;
+  display         : flex;
+  justify-content : center;
+  align-items     : center;
+  color           : var(--co-pri);
+}
+.menu {
+  width           : 250px;
+  position        : absolute;
+  top             : 0;
+  left            : 0;
+  bottom          : 0;
+  background      : var(--bg-sec);
+  display         : flex;
+  flex-direction  : column;
+  gap             : 1rem;
+  justify-content : flex-start;
+  align-items     : flex-start;
+  padding         : 1rem;
+  box-shadow      : var(--sombra);
+  z-index         : 1000;
+}
+/* Contenedor del elemento */
+.container {
+  background      : var(--bg-sec);
+  width           : calc(var(--dim)*1.25);
+  height          : calc(var(--dim)*1.25);
+  display         : flex;
+  justify-content : center;
+  align-items     : center;
+  position        : relative;
+  transition      : all .3s ease-in-out;
+  box-shadow      : 0 0 0 2px rgba(255,0,0,0.5);
+}
+.container::before {
+  content    : "";
+  width      : 1px;
+  position   : absolute;
+  top        : 0;
+  bottom     : 0;
+  background : var(--ejes);
+}
+.container::after {
+  content    : "";
+  height     : 1px;
+  position   : absolute;
+  left       : 0;
+  right      : 0;
+  background : var(--ejes);
+}
+/* Elemento a transformar */
+#box {
+  width      : var(--dim);
+  height     : var(--dim);
+  background : var(--bg-ter);
+  transition : all .3s ease-in-out;
+}
+
+/* Transformaciones */
+.box--trasladar { transform: translate(var(--tras)); }
+.box--rotar     { transform: rotate(var(--rot));     }
+.box--escalar   { transform: scale(var(--esc));      }
+.box--torcer    { transform: skew(var(--tor));       }
+
+/* Estilo elementos */
+button {
+  border        : none;
+  min-width     : 100px;
+  height        : 30px;
+  color         : #fff;
+  cursor        : pointer;
+  outline       : none;
+  border-radius : 5px;
+  background    : steelblue;
+  transition    : all 0.2s ease;
+  font          : 600 16px arial;
+  box-shadow    : 0 0 1px 1px #000;
+}
+button:hover, button:active {
+  background : #F80;
+  color      : black;
+}
+[type="range"] {
+    appearance : none;
+    border     : none;
+    box-shadow : none;
+    height     : 5px;
+    cursor     : grab;
+    background : #352f31;
+  }
+label { font: 100 0.85rem monospace; }
+span  { color: lime ; }
+h3    { border-bottom: 1px solid #fff;}
+#dim-lbl  {
+  cursor:pointer;
+}

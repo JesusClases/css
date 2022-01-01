@@ -1,0 +1,56 @@
+/* CSS -> (cc) 3con14
+-------------------------------------------------
+
+------------------------------------------------- */
+
+*, *::after, *::before {
+  box-sizing : inherit;
+  margin     : 0;
+  padding    : 0;
+  outline    : 2 solid red;
+}
+
+body {
+  min-height: 100vh;
+  background: #333;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+button {
+  width: 100px;
+  height: 100px;
+  background-color: #ff0;
+  border: none;
+  transition: transform 0.3s ease-in;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  margin: 1rem;
+  background: rgba(0,0,0,0.5);
+  border-radius: 5px;
+}
+.elementos {
+  display: flex;
+  gap: 1rem;
+}
+button:nth-of-type(1):focus {
+  background: lime;
+  transform: rotate(30deg)
+}
+
+
+
+/* .box:nth-of-type(1):target {background: lime;}
+.box:nth-of-type(2):target {background: lime;}
+.box:nth-of-type(3):target {background: lime;}
+.box:nth-of-type(4):target {background: lime;} */
+
+/* .box:active {
+  transform: rotate(30deg);
+} */

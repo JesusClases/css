@@ -41,4 +41,9 @@ h3::marker {
   font-weight: 900;
 }
 
-
+::marker {
+ color: red;
+}
+:hover::marker {
+  color: blue;
+}

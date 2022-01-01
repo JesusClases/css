@@ -2,6 +2,16 @@
 
 [stateof](https://2020.stateofcss.com/en-US/)
 
+- 🔗 [W3C](https://www.w3.org/)
+- 🔗 [MDN](https://developer.mozilla.org/es/)
+- 🔗 [Can_I_use"](https://caniuse.com/)
+- 🔗 [CSS-TRICKS](https://css-tricks.com/)
+- 🔗 [stateofcss](https://2020.stateofcss.com/es-ES/)
+
+---
+
+- 🔗 [flex](https://flexbox.help/)
+
 1. ### Introducción
    - Funcionamiento
    - Especificaciones W3C

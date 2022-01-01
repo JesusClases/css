@@ -1,0 +1,70 @@
+/* CSS -> (cc) 3con14
+-------------------------------------------------
+transform
+
+------------------------------------------------- */
+:root {
+  --ff     : sans-serif;
+  --col1   : #F0F0F0;
+  --col2   : #ffff00;
+  --bg1    : #333;
+  --sp     : 1rem;
+  --br     : 5px;
+  --lado   : 10vmin;
+  --escala : 1;
+}
+*, *::after, *::before {
+  box-sizing : inherit;
+  margin     : 0;
+  padding    : 0;
+  outline    : 0 none transparent;
+}
+html {
+  font: 100 16px/1.25 sans-serif;
+
+  /* background-image: radial-gradient(50% 50% at top center,
+  rgba(0,0,0,.66),#262626);
+  font-size: clamp(12px,calc(.8rem + .25vw),20px);
+  background-size: 120% 2000px,100% 2000px;
+  font-weight: 400;
+  line-height: 1.7; */
+}
+body {
+  min-height      : 100vh;
+  color           : #fff;
+  background      : #333;
+  display         : flex;
+  align-items     : center;
+  justify-content : center;
+  flex-direction  : column;
+  margin-left     : 150px;
+}
+
+.box {
+  width      : var(--lado);
+  height     : var(--lado);
+  background : var(--col2);
+  transform  : scale(var(--escala));
+  transition : all 0.5s ease-in-out;
+}
+.titulo {
+  position    : fixed;
+  top         : 1rem;
+  font        : 600 2rem sans-serif;
+  text-shadow : 1px 1px 1px #000;
+}
+
+.opciones {
+  position : fixed;
+  top      : 0;
+  bottom   : 0;
+  left     : 0;
+  padding  : 1em;
+
+  display        : flex;
+  flex-direction : column;
+
+  color      : #999;
+  background : rgba(0,0,0,0.1);
+}
+input { padding: .5rem 0; }

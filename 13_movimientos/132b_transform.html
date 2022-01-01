@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="132b_transform.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="menu">
+    <h3>Transformaciones</h3>
+
+    <label for="tras">Trasladar:
+    <span id="tras-uni">0px</span></label>
+    <input type="range" id="tras" min="-150" max="150" step="5" value="0">
+
+    <label for="rot">Rotar:
+    <span id="rot-uni">0deg</span></label>
+    <input type="range" id="rot" min="-360" max="360" step="5" value="0">
+
+    <label for="esc">Escalar:
+    <span id="esc-uni">1</span></label>
+    <input type="range" id="esc" min="0.1" max="2" step="0.1" value="1">
+
+    <label for="tor">Torcer:
+    <span id="tor-uni">0deg</span></label>
+    <input type="range" id="tor" min="-75" max="75" step="5" value="0">
+
+    <label id="dim-lbl" for="dim">Tamaño:
+    <span id="dim-uni">45vmin</span></label>
+    <input type="range" id="dim" min="10" max="75" step="5" value="45">
+
+  </div>
+
+  <div class="container">
+    <div id="box"></div>
+  </div>
+
+<script src="132b_transform.js"></script>
+</body>
+</html>
