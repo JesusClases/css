@@ -22,6 +22,7 @@
 
 .triangulo {
   clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  transition: all 1s ease;
 }
 .pentagono {
   clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
@@ -33,7 +34,9 @@
   clip-path: polygon(79% 4%, 66% 17%, 66% 42%, 81% 58%, 81% 100%, 56% 74%, 29% 100%, 0 100%, 44% 50%, 44% 0);
 }
 
-
+.triangulo:hover {
+  clip-path: circle(75%);
+}
 
 /* .ani:hover {
   cursor: pointer;
