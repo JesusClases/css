@@ -1,0 +1,80 @@
+:root {
+  --multi : 4.5;
+  --rel16 : calc(16vw * var(--multi));
+  --rel9  : calc(9vw * var(--multi));
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  max-width       : 96vw;
+  min-height      : 100vh;
+  background      : tan;
+  display         : flex;
+  flex-direction  : column;
+  justify-content : center;
+  align-items     : center;
+}
+.slideshow {
+  width    : var(--rel16);
+  height   : var(--rel9);
+  position : relative;
+
+  display         : flex;
+  flex-direction  : column;
+  justify-content : center;
+  align-items     : center;
+  background      : #222;
+  overflow        : hidden;
+  box-shadow      : 0 0 0 4px #fff;
+}
+.slide {
+  position : absolute;
+  top      : 0;
+  left     : 0;
+}
+img {
+  max-width   : 100%;
+  height      : auto;
+  line-height : 0;
+  display     : block;
+  /* transform   : scale(0); */
+  /* transform   : translateX(calc(var(--rel9) * -1)); */
+  transform   : translateY(calc(var(--rel9) * -1));
+  opacity     : 0;
+  transition  : all 0.5s ease-in-out;
+}
+.nav {
+  width  : var(--rel16);
+  height : 40px;
+}
+.nav {
+  display         : flex;
+  justify-content : center;
+  align-items     : center;
+}
+img:target {
+  /* transform: scale(1); */
+  /* transform : translateX(0); */
+  transform : translateY(0);
+  opacity   : 1;
+}
+a {
+  display         : inline-block;
+  width           : 20px;
+  height          : 20px;
+  border-radius   : 50%;
+  background      : #000;
+  margin          : 0.25rem;
+  text-decoration : none;
+  border          : 2px solid #fff;
+  box-shadow      : 1px 1px 2px #333;
+}
+a:active { background: #f00;}
+a:hover  { border    : 2px solid #f00;}
+h1 {
+  margin: 1rem;
+  font-family: sans-serif;
+}

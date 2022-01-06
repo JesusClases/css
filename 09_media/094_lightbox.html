@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./094_lightbox.css">
+</head>
+<body>
+  <h2>Galería de imágenes lightbox<br>responsive solo con CSS</h2>
+
+  <div class="galeria">
+    <div class="item"><a href="#img1"><img src="./../assets/car/1.jpg"></a></div>
+    <div class="item"><a href="#img2"><img src="./../assets/car/2.jpg"></a></div>
+    <div class="item"><a href="#img3"><img src="./../assets/car/3.jpg"></a></div>
+    <div class="item"><a href="#img4"><img src="./../assets/car/4.jpg"></a></div>
+  </div>
+
+  <div class="modal" id="img1">
+    <div class="imagen">
+      <a class="ant" href="#img4"></a>
+      <a href="#" title="cerrar"></a>
+      <img src="./../assets/car/1.jpg">
+      <a class="sig" href="#img2"></a>
+    </div>
+  </div>
+
+  <div class="modal" id="img2">
+    <div class="imagen">
+      <a class="ant" href="#img1"></a>
+      <a href="#" title="cerrar"></a>
+      <img src="./../assets/car/2.jpg">
+      <a class="sig" href="#img3"></a>
+    </div>
+  </div>
+
+  <div class="modal" id="img3">
+    <div class="imagen">
+      <a class="ant" href="#img2"></a>
+      <a href="#" title="cerrar"></a>
+      <img src="./../assets/car/3.jpg">
+      <a class="sig" href="#img4"></a>
+    </div>
+  </div>
+
+  <div class="modal" id="img4">
+    <div class="imagen">
+      <a class="ant" href="#img3"></a>
+      <a href="#" title="cerrar"></a>
+      <img src="./../assets/car/4.jpg">
+      <a class="sig" href="#img1"></a>
+    </div>
+  </div>
+</body>
+</html>
